@@ -5,9 +5,8 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule game-dev-programmer-portfolio-projects index.html
-RewriteRule about-me-cv-resume about.html
-RewriteRule programming-code-scripts-work-showcase programming.html
-RewriteRule additional-projects-arts-blender other.html
-RewriteRule programming-and-work-skills skills.html
-RewriteRule hire-a-game-dev-programmer contact.html
+RewriteRule featured-projects-programmer-portfolio index.html
+RewriteRule kim-jestem kimjestem.html
+RewriteRule oferta-tworzenie-stron-www oferta.html
+RewriteRule cv-programista-php-javascript cv.html
+RewriteRule kontakt-programista-php kontakt.html
