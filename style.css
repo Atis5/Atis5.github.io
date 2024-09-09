@@ -70,7 +70,7 @@ h1
 {
     float: left;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     min-height: 30px;
     margin-left: 30px;
     margin-top: 10px;
@@ -90,9 +90,11 @@ h1
 
 #content
 {
-    width: 100%;
+    width: 900px;
     min-height: 580px;
     background-color: #2e2e31;
+    text-align: center;
+    padding: 50px;
 }
 
 .tile
