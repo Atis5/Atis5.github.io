@@ -16,6 +16,13 @@ h1
     color: #67B7D1;
 }
 
+/* Tile title */
+h3
+{ 
+    /*background-color: #59c0ee;*/
+    font-size: 25px;
+}
+
 #container
 {
     width: 1000px;
@@ -97,20 +104,59 @@ h1
 #content
 {
     width: 100%;
-    min-height: 580px;
+    min-height: 10px;
     background-color: #2e2e31;
 }
 
 .tile
 {
     float: left;
-    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     width: 400px;
-    height: 250px;
     background-color: #6ad0ff;
     color:#1D1D20;
-    font-size: 20px;
     text-align: center;
+}
+
+.tileImage
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 356px;
+    height: 200px;
+    background-color: #67B7D1;
+}
+
+.tileList
+{
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.tileButtonBig
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    word-wrap: normal;
+    width: 340px;
+    font-size: 15px;
+}
+
+.tileButton
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 170px;
+}
+
+.tileLink
+{
+    text-decoration: none;
 }
 
 #footer
