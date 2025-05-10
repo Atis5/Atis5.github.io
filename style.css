@@ -181,10 +181,18 @@ footer
 #aboutMePhoto
 {
     float: left;
-    width: 400px;
+    height: 400px;
+    padding: 5px;
     margin: 20px 40px 20px 40px;
-    min-height: 532px;
     background-color: #4090aa;
+}
+
+#aboutMePhoto img 
+{
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
 #aboutMeText
@@ -208,15 +216,39 @@ footer
 
 .skillsHeader
 {
+    margin-left: 5%;
     font-size: 25px;
-    text-align: center;
+    text-align: left;
+    width: 100%;
 }
+
 .skills
 {
+    margin-left: 1%;
+    margin-right: 1%;
     float: left;
-    width: 33%;
+    width: 31%;
     font-size: 20px;
     line-height: 40px;
 }
 
+.skills ul
+{
+    margin-top: 0px;
+}
+
+#programmingLanguages
+{
+    width: 20%;
+}
+
+#softwareUsed
+{
+    width: 34%;
+}
+
+#softSkills
+{
+    width: 40%;
+}
 
