@@ -3,7 +3,7 @@ body
     background-color: #1D1D20;
     color: white;
     font-family: "Lato", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 /* My name */
@@ -15,7 +15,13 @@ h1
     color: #67B7D1;
 }
 
-/* Tile title */
+/* Page title*/
+h2
+{
+    font-size: 50px;
+}
+
+/* Category */
 h3
 { 
     /*background-color: #59c0ee;*/
@@ -23,6 +29,13 @@ h3
     text-align: center;
     margin:auto;
     padding: 10px;
+}
+
+/* Subcategory */
+h4
+{
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 
@@ -41,6 +54,10 @@ header
     width: 200px;
     text-align: center;
     float: left;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #67B7D1;
 }
 
 nav
@@ -174,6 +191,71 @@ footer
 {
     text-decoration: none;
 }
+
+/* \/ \/ \/ PROJECT DETAILS  \/ \/ \/ */
+
+#title
+{
+    width: 100%;
+    text-align: center;
+}
+
+#subtitle
+{
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+#projectNav
+{
+    text-align: center;
+}
+
+.projectButton
+{
+    width: 80px;
+    min-height: 80px;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4090aa;
+    color: white;
+    text-align: center;
+}
+
+.buttonSubtitle
+{
+    margin-top: -10px;
+}
+
+.projectSection
+{
+    margin-top: 100px;
+}
+
+.contribution
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contributionContent
+{
+    padding: 40px 0;
+    float: left;
+    width: 50%;
+}
+
+.contributionImage
+{
+    float: left;
+    width: 50%;
+    background-color: #67B7D1;
+    min-height: 200px;
+}
+
 
 
 /* \/ \/ \/ ABOUT ME  \/ \/ \/ */
