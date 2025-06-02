@@ -1,7 +1,7 @@
 body
 {
     background-color: #1D1D20;
-    color: white;
+    color: #ffffff;
     font-family: "Lato", sans-serif;
     font-size: 20px;
 }
@@ -14,7 +14,7 @@ h1
     font-size: 35px;
     letter-spacing: 3px;
     font-family: "Josefin Sans", sans-serif;
-    color: #67B7D1;
+    color: #0077b6;
 }
 
 /* Page title*/
@@ -63,6 +63,8 @@ header
 {
     float: left;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 22px;
     font-weight: bold;
     min-height: 30px;
@@ -73,7 +75,7 @@ header
 
 .navtile:hover
 {
-    background-color: #4090aa;
+    background-color: #0077b6;
     color: #eeeeee;
     /* Inversed colors:
     background-color: rgb(226, 226, 223);
@@ -102,7 +104,7 @@ header
 
 .contact:hover
 {
-    background-color: #4090aa;
+    background-color: #0077b6;
 }
 
 .contactText
@@ -130,31 +132,40 @@ main
 footer
 {
     clear: both;
-    background-color: #00008b;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
+button 
+{
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    background-color: #0077b6;
+    color:#ffffff;
+}
+  
+button:hover 
+{
+    background-color: #1D1D20; 
+    color: white;
+}
 
 /* \/ \/ \/ FEATURED PROJECTS \/ \/ \/ */
 
 .tile
 {
     float: left;
-    margin: 20px 40px 20px 40px;
-    padding: 2px;
+    margin: 20px 10px;
+    padding: 10px;
     width: 400px;
-    background-color: #6ad0ff;
-    color:#1D1D20;
     text-align: center;
-    border: 3px solid #8edffb;
+    border: 3px solid #00b4d8;
+    border-radius: 50px;
 }
 
 .tileImage
 {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
     width: 390px;
     height: 220px;
@@ -167,32 +178,51 @@ footer
     margin-left: 15px;
     margin-right: 15px;
     text-align: left;
-    font-size: 18px;
 }
 
 .tileList
 {
     text-align: left;
-    font-size: 15px;
-    line-height: 30px;
-    min-height: 120px;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .tileButtonBig
 {
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     word-wrap: normal;
-    width: 380px;
+    width: fit-content;
     font-size: 15px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color:#1D1D20;
+}
+
+.tileButtonBig:hover
+{
+    background-color: #0077b6; 
+    color: white;
 }
 
 .tileButton
 {
     font-size: 13px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 190px;
+    margin: 0px 10px 10px;
+    padding: 10px 5px;
+    width: fit-content;
+    background-color: #1D1D20; 
+    color: white;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+}
+
+.tileButton:hover
+{
+    background-color: #0077b6;
+    color:#ffffff;
 }
 
 .tileLink
@@ -234,7 +264,7 @@ footer
 
 .projectButton:hover
 {
-    background-color: #4090aa;
+    background-color: #00b4d8;
 }
 
 .buttonSubtitle
