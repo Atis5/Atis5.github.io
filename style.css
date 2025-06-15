@@ -1,3 +1,5 @@
+/* \/ \/ \/ ALL PAGES \/ \/ \/ */
+
 body
 {
     background-color: #1D1D20;
@@ -36,12 +38,9 @@ h3
 /* Subcategory */
 h4
 {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
-
-
-/* \/ \/ \/ ALL PAGES \/ \/ \/ */
 
 header
 {
@@ -146,7 +145,7 @@ footer
     padding: 20px;
 }
 
-/* \/ \/ \/ FEATURED PROJECTS \/ \/ \/ */
+/* \/ \/ \/ MAIN PAGE \/ \/ \/ */
 
 #projectContainer
 {
@@ -281,6 +280,7 @@ footer
 
 .projectSection
 {
+    text-align: center;
     width: 100%;
     margin-top: 75px;
 }
@@ -301,14 +301,14 @@ footer
 
 .contributionImage
 {
-    background-color: #67B7D1;
-    min-width: 400px;
-    min-height: 225px;
+    border-radius: 10px;
+    width: 50%;
 }
 
 .contributionText
 {
-    padding: 0 50px;
+    width: 46%;
+    padding: 0 2%;
 }
 
 
@@ -325,6 +325,7 @@ footer
 }
 .aboutMePhoto img 
 {
+    border-radius: 10px;
     max-height: 1000px;
     max-width: 100%;
 }
