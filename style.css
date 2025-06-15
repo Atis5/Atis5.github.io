@@ -297,8 +297,9 @@ footer
 
 .contributionImage
 {
+    margin: 0 2%;
     border-radius: 10px;
-    width: 50%;
+    width: 46%;
 }
 
 .contributionText
