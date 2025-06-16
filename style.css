@@ -129,20 +129,20 @@ header
     max-height: 100%;
 }
 
+/* Container for all pages*/
 main
 {
     width: 100%;
     max-width: 1000px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
-footer
+/* Links */
+a
 {
-    clear: both;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    text-decoration: none;
 }
 
 /* \/ \/ \/ MAIN PAGE \/ \/ \/ */
@@ -224,11 +224,6 @@ footer
 {
     background-color: #0077b6;
     color:#1b1919;
-}
-
-.tileLink
-{
-    text-decoration: none;
 }
 
 /* \/ \/ \/ PROJECT DETAILS  \/ \/ \/ */
@@ -313,38 +308,35 @@ footer
 
 /* \/ \/ \/ ABOUT ME  \/ \/ \/ */
 
-#aboutMeIntro
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-.aboutMePhoto img 
-{
-    border-radius: 10px;
-    max-height: 1000px;
-    max-width: 100%;
-}
-
 #aboutMeText
 {
-    padding: 10%;
     text-align: center;
     word-spacing: 2px;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+#aboutMePhotos
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMePhoto
+{
+    border-radius: 20px;
+    max-height: 250px;
 }
 
 #aboutMeSkills
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
-    margin-bottom: 50px;
 }
 
 .skillsHeader
@@ -357,8 +349,11 @@ footer
 
 .skills
 {
-    margin-left: 1%;
-    margin-right: 1%;
+    text-align: left;
+    display: block;
+    float: left;
+    width: 29%;
+    margin: 0 2%;
     font-size: 20px;
     line-height: 40px;
 }
