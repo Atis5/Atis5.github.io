@@ -147,13 +147,19 @@ a
 
 /* \/ \/ \/ MAIN PAGE \/ \/ \/ */
 
-#projectContainer
+.projectContainer
 {
     float: left;
     min-width: 50%;
     max-width: fit-content;
     margin: 20px 0;
 }
+
+.projectContainerMiddle
+{
+    clear: both;
+}
+
 .tile
 {
     margin: auto;
@@ -278,6 +284,12 @@ a
     text-align: center;
     width: 100%;
     margin-top: 75px;
+}
+
+.projectMedia
+{
+    max-height: 500px;
+    border-radius: 10px;
 }
 
 .contributionContent
