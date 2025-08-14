@@ -132,11 +132,7 @@ header
 /* Container for all pages*/
 main
 {
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 /* Links */
@@ -145,46 +141,24 @@ a
     text-decoration: none;
 }
 
-/* \/ \/ \/ MAIN PAGE \/ \/ \/ */
-
-.projectContainer
-{
-    float: left;
-    min-width: 50%;
-    max-width: fit-content;
-    margin: 20px 0;
-}
-
-.projectContainerMiddle
-{
-    clear: both;
-}
+/* \/ \/ \/ INDEX PAGE \/ \/ \/ */
 
 .tile
 {
-    margin: auto;
+    display: inline-block;
+    width: 35%;
     padding: 10px;
-    width: 400px;
-    text-align: center;
+    margin: 20px;
     border: 3px solid #00b4d8;
     border-radius: 50px;
 }
 
-.tileImage
+.tile img
 {
     margin-bottom: 10px;
-    width: 390px;
-    height: 220px;
+    width: 90%;
     border: 3px dashed #00b4d8;
     border-radius: 25px;
-}
-
-.tileText
-{
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: left;
 }
 
 .tileList
@@ -212,24 +186,6 @@ a
 {
     background-color: #0077b6; 
     color: white;
-}
-
-.tileButton
-{
-    font-size: 13px;
-    margin: 0px 10px 10px;
-    padding: 10px 5px;
-    width: fit-content;
-    background-color: #1D1D20; 
-    color: white;
-    transition-duration: 0.2s;
-    border-radius: 10px;
-}
-
-.tileButton:hover
-{
-    background-color: #0077b6;
-    color:#1b1919;
 }
 
 /* \/ \/ \/ PROJECT DETAILS  \/ \/ \/ */
