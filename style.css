@@ -143,17 +143,23 @@ a
 
 /* \/ \/ \/ INDEX PAGE \/ \/ \/ */
 
-.tile
+.projects section
 {
+
     display: inline-block;
-    width: 35%;
-    padding: 10px;
-    margin: 20px;
+    margin: 1.5% 2%;
     border: 3px solid #00b4d8;
     border-radius: 50px;
 }
 
-.tile img
+.date
+{
+    margin: 0;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.projects img
 {
     margin-bottom: 10px;
     width: 90%;
