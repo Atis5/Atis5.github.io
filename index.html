@@ -13,87 +13,111 @@
     <meta http-equiv='pragma' content='no-cache'>
 
     <!-- STYLE -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-
 </head>
 
 
 <body>
-    <header>
-        
-        <h1> Krystian Karczewski </h1>
-        
-        <nav id="nav">
-            <a href="index.html">
-                <div class="navtile" id="featured" style="color: #00b4d8; background-color:initial; border-color: initial;"> 
-                    Main Page
-                </div>
-            </a>
-            <a href="about.html">
-                <div class="navtile" id="about"> 
-                    About Me 
-                </div>
-            </a>
-        </nav>
-        
-        <nav id="contacts">
-            <a href="https://www.linkedin.com/in/krystian-karczewski-59b21a244/" target="_blank">
-                <div class="contact" id="linkedin">
-                    <img class="svgIcon" src="Icons/linkedin-circle.svg">
-                    <p class="contactText">
-                        LinkenIn
-                    </p>
-                </div>
-            </a>
-            <a href="http://discordapp.com/users/307485666814459904" target="_blank">
-                <div class="contact" id="discord">
-                    <img class="svgIcon" src="Icons/discord-circle.svg">
-                    <p class="contactText">
-                        Discord
-                    </p>
-                </div>
-            </a>
-            <a href="https://github.com/Atis5" target="_blank">
-                <div class="contact" id="github">
-                    <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
-                    <p class="contactText">
-                        GitHub
-                    </p>
-                </div>
-            </a>
-            <a href="https://steamcommunity.com/id/AtisAtisAtis/" target="_blank">
-                <div class="contact" id="steam">
-                    <img class="svgIcon" src="Icons/steam.svg">
-                    <p class="contactText">
-                        Steam
-                    </p>
-                </div>
-            </a>
-            <a href="https://atiss.itch.io/" target="_blank">
-                <div class="contact" id="steam">
-                    <img class="svgIcon" src="Icons/itch-io.svg">
-                    <p class="contactText">
-                        Itch.io
-                    </p>
-                </div>
-            </a>
-        </nav>
-        
-        <div style="clear:both;"></div>
-    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg"  data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Krystian Karczewski</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subpages" aria-controls="subpages" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Subpages -->
+            <div class="collapse navbar-collapse" id="subpages">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <!-- About Me -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <!-- Project Details -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project Details
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="borderline.html">Borderline</a></li>
+                            <li><a class="dropdown-item" href="karoharvest.html">Karo Harvest</a></li>
+                            <li><a class="dropdown-item" href="togetherforever.html">Together Forever</a></li>
+                            <li><a class="dropdown-item" href="wash.html">W.A.S.H.</a></li>
+                            <li><a class="dropdown-item" href="curseofthejungle.html">Curse of The Jungle</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contacts-->
+            <div class="d-flex m-auto" id="contacts">
+                <!-- LinkedIn-->
+                <a href="https://www.linkedin.com/in/krystian-karczewski-59b21a244/" target="_blank">
+                    <div class="contact" id="linkedin">
+                        <img class="svgIcon" src="Icons/linkedin-circle.svg">
+                        <p class="contactText">
+                            LinkenIn
+                        </p>
+                    </div>
+                </a>
+                <!-- Discord-->
+                <a href="http://discordapp.com/users/307485666814459904" target="_blank">
+                    <div class="contact" id="discord">
+                        <img class="svgIcon" src="Icons/discord-circle.svg">
+                        <p class="contactText">
+                            Discord
+                        </p>
+                    </div>
+                </a>
+                <!-- GitHub-->
+                <a href="https://github.com/Atis5" target="_blank">
+                    <div class="contact" id="github">
+                        <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
+                        <p class="contactText">
+                            GitHub
+                        </p>
+                    </div>
+                </a>
+                <!-- Steam-->
+                <a href="https://steamcommunity.com/id/AtisAtisAtis/" target="_blank">
+                    <div class="contact" id="steam">
+                        <img class="svgIcon" src="Icons/steam.svg">
+                        <p class="contactText">
+                            Steam
+                        </p>
+                    </div>
+                </a>
+                <!-- Itch-->
+                <a href="https://atiss.itch.io/" target="_blank">
+                    <div class="contact" id="steam">
+                        <img class="svgIcon" src="Icons/itch-io.svg">
+                        <p class="contactText">
+                            Itch.io
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <main class="container">
         <div class="row">
             <div class="projects">
 
                 <!-- BORDERLINE -->
-                <section class="col-sm-12 col-md-4"> 
+                <section class="col-sm-12 col-lg-5"> 
                     <h3> 
                         Borderline 
                         <p class="date"> 02.2025-07.2025 </p>
@@ -114,7 +138,7 @@
                 </section>
                 
                 <!-- KARO HARVEST -->
-                <section class="col-sm-12 col-md-4">
+                <section class="col-sm-12 col-lg-5">
                     <h3> 
                         Karo Harvest 
                         <p class="date"> 09.2025 - 10.2025 </p>
@@ -135,7 +159,7 @@
                 </section>
                 
                 <!-- TOGETHER FOREVER -->
-                <section class="col-sm-12 col-md-4"> 
+                <section class="col-sm-12 col-lg-5"> 
                     <h3> 
                         Together Forever
                         <p class="date"> 04.09.2024 - 06.09.2024 </p> 
@@ -156,7 +180,7 @@
                 </section>
                 
                 <!-- W.A.S.H. -->
-                <section class="col-sm-12 col-md-4">
+                <section class="col-sm-12 col-lg-5">
                     <h3> 
                         W.A.S.H. 
                         <p class="date"> 01.2024 - 06.2024 </p>
@@ -177,7 +201,7 @@
                 </section>
                 
                 <!-- CURSE OF THE JUNGLE -->
-                <section class="col-sm-12 col-md-4">  
+                <section class="col-sm-12 col-lg-5">  
                     <h3> 
                         Curse of The Jungle
                         <p class="date"> 11.2023 - 02.2024 </p>
@@ -202,6 +226,6 @@
         <div style="clear: both;"></div>
     </main>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
