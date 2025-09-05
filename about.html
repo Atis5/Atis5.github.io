@@ -27,7 +27,7 @@
         <div class="container-fluid">
 
             <!-- Logo -->
-            <a class="navbar-brand" href="#">Krystian Karczewski</a>
+            <a class="navbar-brand" href="index.html">Krystian Karczewski</a>
 
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subpages" aria-controls="subpages" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,11 +39,11 @@
                 <ul class="navbar-nav mx-auto">
                     <!-- Home -->
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <!-- About Me -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About Me</a>
+                        <a class="nav-link active"  aria-current="page" href="#">About Me</a>
                     </li>
                     <!-- Project Details -->
                     <li class="nav-item dropdown">
@@ -112,18 +112,22 @@
         </div>
     </nav>
 
-    <main>
-        <article id="aboutMeText">
-            <h2 style="margin-bottom: 0;"> About Me </h2>
-            <br/>
-            I'm a programmer, and in-engine developer, and occassionally designer. I'm currently studying Creative Media and Game Technologies and previously graduated as a certified IT Technician.
-            <br/><br/>
-            I'm an easy person to work with. By working with internationals on multiple group projects, I've learned how to discuss ideas, solve disagreementes, and organize work. When coding, I always have my teammates in mind. My code is highly organized, documented, easy to edit, and possibly scalable, which makes my work accessible to designers, fellow programmers, and artists in my group.
-        </article>
-        <section id="aboutMePhotos">
-            <img src="Images/About/ChrisPhoto.png" class="aboutMePhoto"/> 
-            <img src="Images/About/ChrisPhotoBody.png" class="aboutMePhoto"/> 
-        </section>
+    <main class="container">
+        <div class="row">
+            <div class="">
+                <section class="col-sm-4">
+                    <h2 style="margin-bottom: 0;"> About Me </h2>
+                    <br/>
+                    I'm a programmer, and in-engine developer, and occassionally designer. I'm currently studying Creative Media and Game Technologies and previously graduated as a certified IT Technician.
+                    <br/><br/>
+                    I'm an easy person to work with. By working with internationals on multiple group projects, I've learned how to discuss ideas, solve disagreementes, and organize work. When coding, I always have my teammates in mind. My code is highly organized, documented, easy to edit, and possibly scalable, which makes my work accessible to designers, fellow programmers, and artists in my group.
+                </article>
+                <section class="col-sm-4">
+                    <img src="Images/About/ChrisPhoto.png" class="aboutMePhoto"/> 
+                    <img src="Images/About/ChrisPhotoBody.png" class="aboutMePhoto"/> 
+                </section>
+            </div>
+        </div>
 
         <div style="clear:both;"></div>
 

@@ -63,7 +63,6 @@ a
     background-color: #0C0C10;
     border-bottom: 2px solid;
     border-color: #2E2E31;
-
     margin-bottom: 50px;
 }
 
@@ -91,28 +90,6 @@ a
 .active
 {
     color: #0077b6 !important;
-}
-
-/*.navtile
-{
-    float: left;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 800;
-    min-height: 30px;
-    padding: 10px;
-    margin: 0 10px;
-    color: #000000;
-    background-color: #eeeeee;
-    border: 2px solid;
-    border-radius: 5px;
-    border-color: #eeeeee;
-}*/
-
-.navtile:hover
-{
-    background-color: #0077b6;
-    color: #eeeeee;
 }
 
 .contact
@@ -157,13 +134,6 @@ a
     background-color: #0c0c1050;
 }
 
-.date
-{
-    margin: 0;
-    font-size: 18px;
-    opacity: 0.5;
-}
-
 .projects img
 {
     margin-bottom: 10px;
@@ -172,14 +142,21 @@ a
     border-radius: 25px;
 }
 
+.date
+{
+    margin: 0;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
 .tileList
 {
     text-align: left;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 35px;
 }
 
-.tileButtonBig
+.buttonBig
 {
     margin-bottom: 10px;
     padding: 10px 20px;
@@ -193,7 +170,7 @@ a
     color:#1D1D20;
 }
 
-.tileButtonBig:hover
+.buttonBig:hover
 {
     background-color: #0077b6; 
     color: white;
