@@ -46,18 +46,14 @@
 
 
 <body>
-
     <nav class="navbar sticky-top navbar-expand-lg"  data-bs-theme="dark">
         <div class="container-fluid">
-
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">Krystian Karczewski</a>
-
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subpages" aria-controls="subpages" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Subpages -->
             <div class="collapse navbar-collapse" id="subpages">
                 <ul class="navbar-nav mx-auto">
@@ -78,13 +74,12 @@
                             <li><a class="dropdown-item" href="borderline.html">Borderline</a></li>
                             <li><a class="dropdown-item" href="karoharvest.html">Karo Harvest</a></li>
                             <li><a class="dropdown-item" href="togetherforever.html">Together Forever</a></li>
-                            <li><a class="dropdown-item" href="wash.html">W.A.S.H.</a></li>
+                            <li><a class="dropdown-item" href="wash.html" style="color: #00b4d8">W.A.S.H.</a></li>
                             <li><a class="dropdown-item" href="curseofthejungle.html">Curse of The Jungle</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-
             <!-- Contacts-->
             <div class="d-flex m-auto" id="contacts">
                 <!-- LinkedIn-->
@@ -136,81 +131,93 @@
         </div>
     </nav>
 
-    <main>
+    <main class="container">
+        <header>
+            <h1>W.A.S.H</h1>
+            <p> 01.2024 - 06.2024 </p>
+            <div id="projectNav">
+                <a href="https://atiss.itch.io/wash" target="_blank">
+                    <div class="projectButton">
+                        <img class="svgIcon" src="Icons/itch-io.svg">
+                        <p class="buttonSubtitle">
+                            itch.io
+                        </p>
+                    </div>
+                </a>
+                <a href="https://github.com/Atis5/W.A.S.H." target="_blank">
+                    <div class="projectButton">
+                        <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
+                        <p class="buttonSubtitle">
+                            GitHub
+                        </p>    
+                    </div>
+                </a>
+            </div>
+        </header>
 
-        <div id="title">
-            <h2>W.A.S.H.</h2>
-            <p id="subtitle"> 01-06.2024 </p>
-        </div>
+        <!-- About The Project-->
+        <section class="projectSection">
+            <h2>About the project</h2>
+            <p> W.A.S.H. was a semester-long student project made by 5 students. Our task was to advertise “Union of Waterboards” in the Netherlands. It consisted of a lot of research and prototyping. This project was my first real experience with Unity, and taught me a lot about programming.</p>
+        </section>
 
-        <nav id="projectNav">
-            <a href="https://atiss.itch.io/wash" target="_blank">
-                <div class="projectButton">
-                    <img class="svgIcon" src="Icons/itch-io.svg">
-                    <p class="buttonSubtitle">
-                        itch.io
-                    </p>
-                </div>
-            </a>
 
-            <a href="https://github.com/Atis5/W.A.S.H." target="_blank">
-                <div class="projectButton">
-                    <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
-                    <p class="buttonSubtitle">
-                        GitHub
-                    </p>    
-                </div>
-            </a>
-            <div style="clear:both"></div>
-        </nav>
-
-        <article>
-            <section class="projectSection">
-                <h3>About the project</h3>
-                <p> W.A.S.H. was a semester-long student project made by 5 students. Our task was to advertise “Union of Waterboards” in the Netherlands. It consisted of a lot of research and prototyping. This project was my first real experience with Unity, and taught me a lot about programming.</p>
-            </section>
-
-            <section class="projectSection">
-                <h3> My Contributions </h3>
-
-                <div class="contributionContent">
-                    <div class="contributionText"">
-                        <h4> Underwater Movement </h4>
+        
+        <!-- Contributions -->
+        <section class="projectSection">
+            <h2> My Contributions </h2>
+            <!-- Underwater Movement-->
+            <div class="contribution"> 
+                <h3> Underwater Movement </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/WASH/Underwater.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
                         Heavy, submarine-like movement. Controlled with mouse or/and keyboard, integrated with HUD, stabilizes camera, can be quickly edited through Inspector.
-                        <br> <br>
-                        <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/SubControl.cs" target="_blank">
-                            <button class="tileButtonBig"> See Script </button>
-                        </a>
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/SubControl.cs" target="_blank">
+                                <button class="buttonBig"> See Script </button>
+                            </a>
+                        </div>
                     </div>
-                    <video class="contributionImage" src="Images/WASH/Underwater.mp4" controls></video>
                 </div>
-                
-                <div class="contributionContent">
-                    <video class="contributionImage" src="Images/WASH/Radar.mp4" controls></video>
-                    <div class="contributionText"">
-                        <h4> Radar </h4>
+            </div>
+            <!-- Radar -->
+            <div class="contribution"> 
+                <h3> Radar </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/WASH/Radar.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 order-lg-first">
                         Minimap that shows pickable objects and the distance to them.
-                        <br> <br>
-                        <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/RadarTracking.cs" target="_blank">
-                            <button class="tileButtonBig"> See Script </button>
-                        </a>
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/RadarTracking.cs" target="_blank">
+                                <button class="buttonBig"> See Script </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="contributionContent">
-                    <div class="contributionText"">
-                        <h4> Object Pickup </h4>
+            </div>
+            <!-- Object Pickup -->
+            <div class="contribution">                
+                <h3> Object Pickup </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/WASH/Pickup.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
                         Slowly moves object towards the submarine, then picks them up.
-                        <br> <br>
-                        <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/PickUpItems.cs" target="_blank">
-                            <button class="tileButtonBig"> See Script </button>
-                        </a>
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/PickUpItems.cs" target="_blank">
+                                <button class="buttonBig"> See Script </button>
+                            </a>
+                        </div>
                     </div>
-                    <video class="contributionImage" src="Images/WASH/Pickup.mp4" controls></video>
                 </div>
-
-            </section>
-        <article>
+            </div>
+        </section>
     </main>     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>             
 </body>

@@ -49,15 +49,12 @@
 
     <nav class="navbar sticky-top navbar-expand-lg"  data-bs-theme="dark">
         <div class="container-fluid">
-
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">Krystian Karczewski</a>
-
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subpages" aria-controls="subpages" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Subpages -->
             <div class="collapse navbar-collapse" id="subpages">
                 <ul class="navbar-nav mx-auto">
@@ -76,7 +73,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="borderline.html">Borderline</a></li>
-                            <li><a class="dropdown-item" href="karoharvest.html">Karo Harvest</a></li>
+                            <li><a class="dropdown-item" href="karoharvest.html" style="color: #00b4d8">Karo Harvest</a></li>
                             <li><a class="dropdown-item" href="togetherforever.html">Together Forever</a></li>
                             <li><a class="dropdown-item" href="wash.html">W.A.S.H.</a></li>
                             <li><a class="dropdown-item" href="curseofthejungle.html">Curse of The Jungle</a></li>
@@ -84,7 +81,6 @@
                     </li>
                 </ul>
             </div>
-
             <!-- Contacts-->
             <div class="d-flex m-auto" id="contacts">
                 <!-- LinkedIn-->
@@ -136,84 +132,89 @@
         </div>
     </nav>
 
-    <main>
+    <main class="container">
 
-        <div id="title">
-            <h2>Karo Harvest</h2>
-            <p id="subtitle"> 09.2025 - 10.2025 </p>
-        </div>
+        <header>
+            <h1>Karo Harvest</h1>
+            <p> 09.2025 - 10.2025 </p>
+            <div id="projectNav">
+                <a href="https://atiss.itch.io/karo-harvest" target="_blank">
+                    <div class="projectButton" id="linkedin">
+                        <img class="svgIcon" src="Icons/itch-io.svg">
+                        <p class="buttonSubtitle">itch.io</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Atis5/Karo-Harvest-VR" target="_blank">
+                    <div class="projectButton" id="github">
+                        <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
+                        <p class="buttonSubtitle">GitHub</p>    
+                    </div>
+                </a>
+            </div>
+        </header>
 
-        <nav id="projectNav">
-            <a href="https://atiss.itch.io/karo-harvest" target="_blank">
-                <div class="projectButton" id="linkedin">
-                    <img class="svgIcon" src="Icons/itch-io.svg">
-                    <p class="buttonSubtitle">
-                        itch.io
-                    </p>
-                </div>
-            </a>
+        <!-- About The Project-->
+        <section class="projectSection">
+            <h2>About the project</h2>
+            <p> Karo Harvest was a student project that lasted half a semester. Its goal was to create a concept of a future in 30 years, and create a game that could be played by people in that time using VR or AR technology. Working with VR for the first time was challenging, but not only did I manage to program various interactions, the product received maximum grade from the teachers. </p>
+        </section>
 
-            <a href="https://github.com/Atis5/Karo-Harvest-VR" target="_blank">
-                <div class="projectButton" id="github">
-                    <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
-                    <p class="buttonSubtitle">
-                        GitHub
-                    </p>    
-                </div>
-            </a>
-            <div style="clear:both"></div>
-        </nav>
-
-        <article>
-            <section class="projectSection">
-                <h3>About the project</h3>
-                <p> Karo Harvest was a student project that lasted half a semester. Its goal was to create a concept of a future in 30 years, and create a game that could be played by people in that time using VR or AR technology. Working with VR for the first time was challenging, but not only did I manage to program various interactions, the product received maximum grade from the teachers. </p>
-            </section>
-
-            <section class="projectSection">
-                <h3> My Contributions </h3>
-
-                <div class="contributionContent">
-                    <div class="contributionText"">
-                        <h4> VR Hands </h4>
+        <!-- Contributions-->
+        <section class="projectSection">
+            <h2> My Contributions </h2>
+            <!-- VR Hands-->
+            <div class="contribution">
+                <h3> VR Hands </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/KaroHarvest/VRHands.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
                         Imported Oculus hands from Meta, then animated and scripted them.
-                        <br> <br>
-                        <a href="https://github.com/Atis5/Karo-Harvest-VR/blob/main/VR%20Block%201/Assets/Project%20Assets/Scripts/HandController.cs" class="tileLink" target="_blank">
-                            <button class="tileButtonBig"> See Script</button>
-                        </a>
-                    </div>
-                    <video class="contributionImage" src="Images/KaroHarvest/VRHands.mp4" controls></video>
-                </div>
-                
-                <div class="contributionContent">
-                    <video class="contributionImage" src="Images/KaroHarvest/Dial.mp4" controls></video>
-                    <div class="contributionText">
-                        <h4> Dial Interaction</h4>
-                        Implemented dial that controls the UI, and can react to how user rotates it.
-                        <br> <br>
-                        <a href="https://github.com/Atis5/Karo-Harvest-VR/blob/main/VR%20Block%201/Assets/Project%20Assets/Scripts/Interactions/DialInteraction.cs" class="tileLink" target="_blank">
-                            <button class="tileButtonBig"> See Script</button>
-                        </a>
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Atis5/Karo-Harvest-VR/blob/main/VR%20Block%201/Assets/Project%20Assets/Scripts/HandController.cs" class="tileLink" target="_blank">
+                                <button class="buttonBig"> See Script</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="contributionContent">
-                    <div class="contributionText">
-                        <h4> Humidity Changer</h4>
+            </div>
+            <!-- Dial Interaction-->
+            <div class="contribution">
+                <h3> Dial Interaction </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/KaroHarvest/Dial.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 order-lg-first">
+                        Dial that controls diagetic UI, and can react to how user rotates it.
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Atis5/Karo-Harvest-VR/blob/main/VR%20Block%201/Assets/Project%20Assets/Scripts/Interactions/DialInteraction.cs" class="tileLink" target="_blank">
+                                <button class="buttonBig"> See Script</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Humidity Changer -->
+            <div class="contribution">
+                <h3> Humidity Changer </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/KaroHarvest/Humidity.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
                         Communicates with the dial to change humidity for plants to grow.
-                        <br> <br>
-                        <a href="https://github.com/Atis5/Karo-Harvest-VR/tree/main/VR%20Block%201/Assets/Project%20Assets/Scripts/Humidity" class="tileLink" target="_blank">
-                            <button class="tileButtonBig"> See Scripts</button>
-                        </a>
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Atis5/Karo-Harvest-VR/tree/main/VR%20Block%201/Assets/Project%20Assets/Scripts/Humidity" class="tileLink" target="_blank">
+                                <button class="buttonBig"> See Script</button>
+                            </a>
+                        </div>
                     </div>
-                    <video class="contributionImage" src="Images/KaroHarvest/Humidity.mp4" controls></video>
                 </div>
-
-            </section>
-        <article>
-    </main>      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>            
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-
-
 </html>

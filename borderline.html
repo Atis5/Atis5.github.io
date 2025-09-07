@@ -22,18 +22,14 @@
 
 
 <body>
-
     <nav class="navbar sticky-top navbar-expand-lg"  data-bs-theme="dark">
         <div class="container-fluid">
-
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">Krystian Karczewski</a>
-
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subpages" aria-controls="subpages" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Subpages -->
             <div class="collapse navbar-collapse" id="subpages">
                 <ul class="navbar-nav mx-auto">
@@ -51,7 +47,7 @@
                             Project Details
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="borderline.html">Borderline</a></li>
+                            <li><a class="dropdown-item" href="borderline.html" style="color: #00b4d8">Borderline</a></li>
                             <li><a class="dropdown-item" href="karoharvest.html">Karo Harvest</a></li>
                             <li><a class="dropdown-item" href="togetherforever.html">Together Forever</a></li>
                             <li><a class="dropdown-item" href="wash.html">W.A.S.H.</a></li>
@@ -60,7 +56,6 @@
                     </li>
                 </ul>
             </div>
-
             <!-- Contacts-->
             <div class="d-flex m-auto" id="contacts">
                 <!-- LinkedIn-->
@@ -112,90 +107,102 @@
         </div>
     </nav>
 
-    <main>
+    <main class="container">
+        <header>
+            <h1>Borderline</h1>
+            <p> 02.2025 - 07.2025 </p>
+            <div id="projectNav">
+                <a href="https://trinket-interactive.itch.io/borderline" target="_blank">
+                    <div class="projectButton">
+                        <img class="svgIcon" src="Icons/itch-io.svg">
+                        <p class="buttonSubtitle">itch.io</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Rokusz/Borderline" target="_blank">
+                    <div class="projectButton">
+                        <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
+                        <p class="buttonSubtitle">GitHub</p>    
+                    </div>
+                </a>
+            </div>
+        </header>
 
-        <div id="title">
-            <h2>Borderline</h2>
-            <p id="subtitle"> 02.2025 - NOW </p>
-        </div>
+        <!-- About The Project-->
+        <section class="projectSection">
+            <h2>About the project</h2>
+            <p>Borderline was my most passionate student project so far. With just the four of us, we wanted to make a 10 minute of highly polished gameplay. The game is set in a fictional country under Soviet occupation with main character trying to cross the border. It worked out so well that, even after grading, the project continues with hopes of polishing the gameplay and visuals even further, and possibly making a full game out of it in the future. </p>
+            <video class="projectMedia img-fluid" src="Images/Borderline/Gameplay.mp4" controls></video>
+        </section>
 
-        <nav id="projectNav">
-            <a href="https://trinket-interactive.itch.io/borderline" target="_blank">
-                <div class="projectButton">
-                    <img class="svgIcon" src="Icons/itch-io.svg">
-                    <p class="buttonSubtitle">
-                        itch.io
-                    </p>
-                </div>
-            </a>
+        <!-- Award Winning-->
+        <section class="projectSection">
+            <h2>Award Winning</h2>
+            <p>During Student Festival, which is a yearly event at our school where students present their project, it won the "Best Visuals" award, and scored 10/10 grade.</p>
+            <img class="projectMedia img-fluid" src="Images/Borderline/BestVisuals.jpg"></img>
+        </section>
 
-            <a href="https://github.com/Rokusz/Borderline" target="_blank">
-                <div class="projectButton">
-                    <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
-                    <p class="buttonSubtitle">
-                        GitHub
-                    </p>    
-                </div>
-            </a>
-            <div style="clear:both"></div>
-        </nav>
+        <!-- Contributions -->
+        <section class="projectSection">
+            <h2> My Contributions </h2>
 
-        <article>
-            <section class="projectSection">
-                <h3>About the project</h3>
-                <p>Borderline was my most passionate student project so far. With just the four of us, we wanted to make a 10 minute of highly polished gameplay. The game is set in a fictional country under Soviet occupation with main character trying to cross the border. It worked out so well that, even after grading, the project continues with hopes of polishing the gameplay and visuals even further, and possibly making a full game out of it in the future. </p>
-                <video class="projectMedia" src="Images/Borderline/Gameplay.mp4" controls></video>
-            </section>
-
-            <section class="projectSection">
-                <h3>Award Winning</h3>
-                <p>During Student Festival, which is a yearly event at our school where students present their project, it won the "Best Visuals" award, and scored 10/10 grade.</p>
-                <img class="projectMedia" src="Images/Borderline/BestVisuals.jpg"></img>
-            </section>
-
-            <section class="projectSection">
-                <h3> My Contributions </h3>
-
-                <div class="contributionContent">
-                    <div class="contributionText"">
-                        <h4> Quest System </h4>
+            <!-- Quest System-->
+            <div class="contribution"> 
+                <h3> Quest System </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/Borderline/Quest.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
                         Easy-to-use, allows for adding, completing, and removing quests through dialogue without having to edit the original script.
-                        <br> <br>
-                        <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Quests/Quest%20System.cs" target="_blank">
-                            <button class="tileButtonBig"> See Script </button>
-                        </a>
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Quests/Quest%20System.cs" target="_blank">
+                                <button class="buttonBig"> See Script </button>
+                            </a>
+                        </div>
                     </div>
-                    <video class="contributionImage" src="Images/Borderline/Quest.mp4" controls></video>
                 </div>
-                
-                <div class="contributionContent">
-                    <video class="contributionImage" src="Images/Borderline/Options.mp4" controls></video>
-                    <div class="contributionText"">
-                        <h4> Dialogue Options </h4>
+            </div>
+            
+            <!-- Dialogue Options -->
+            <div class="contribution">                
+                <h3> Dialogue Options </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/Borderline/Options.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 order-lg-first">
                         Integrated with Yarn Spinner, allows for choosing and highlighting options with mouse wheel, as opposed to hovering over them with a mouse.
-                        <br> <br>
-                        <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Dialogue-Related/ScrollWheelOptions.cs" target="_blank">
-                            <button class="tileButtonBig"> See Script </button>
-                        </a>
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Dialogue-Related/ScrollWheelOptions.cs" target="_blank">
+                                <button class="buttonBig"> See Script </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="contributionContent">
-                    <div class="contributionText"">
-                        <h4> NPC Implementation </h4>
-                        Quick and easy system to add new NPCs. This 4-minute video showcases how quickly the new NPC with voice lines can be added to the game.
-                        <br> <br>
-                        <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Player/PlayerInteract.cs" target="_blank">
-                            <button class="tileButtonBig"> Interaction Script </button>
-                        </a>
-                        <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Dialogue-Related/DialogueVoiceLines.cs" target="_blank">
-                            <button class="tileButtonBig"> Voice Lines Script</button>
-                        </a>
+            <!-- NPC Implementation -->
+            <div class="contribution"> 
+                <h3> NPC Implementation </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/Borderline/NPC.mp4" controls></video>
                     </div>
-                    <video class="contributionImage" src="Images/Borderline/NPC.mp4" controls></video>
+                    <div class="col-xs-12 col-lg-6"">
+                        Quick and easy system to add new NPCs. This 4-minute video showcases how quickly the new NPC with voice lines can be added to the game.
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Player/PlayerInteract.cs" target="_blank">
+                                <button class="buttonBig"> Interaction Script </button>
+                            </a>
+                            <a href="https://github.com/Rokusz/Borderline/blob/main/Assets/Scripts/Dialogue-Related/DialogueVoiceLines.cs" target="_blank">
+                                <button class="buttonBig"> Voice Lines Script</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        <article>
+            </div>
+
+        </section>
 
     </main>             
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>     
