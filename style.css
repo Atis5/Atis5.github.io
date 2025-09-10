@@ -78,14 +78,14 @@ a
     border-bottom: 2px solid;
     border-color: #2E2E31;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 /* Logo */
 .navbar-brand
 {
-    font-size: 26px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #0077b6 !important;
 }
 
