@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- GENERAL SETTINGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krystian Karczewski Portfolio</title>
+    <meta name="description" content="I am an aspiring video game developer. Check out my portfolio!" />
+
+    <!-- DISABLE CACHE -->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- STYLE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg"  data-bs-theme="dark">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">Krystian Karczewski</a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subpages" aria-controls="subpages" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Subpages -->
+            <div class="collapse navbar-collapse" id="subpages">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- About Me -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <!-- Project Details -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project Details
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="notmyproblem.html" style="color: #00b4d8">Not My Problem</a></li>
+                            <li><a class="dropdown-item" href="borderline.html">Borderline</a></li>
+                            <li><a class="dropdown-item" href="karoharvest.html">Karo Harvest</a></li>
+                            <li><a class="dropdown-item" href="togetherforever.html">Together Forever</a></li>
+                            <li><a class="dropdown-item" href="wash.html">W.A.S.H.</a></li>
+                            <li><a class="dropdown-item" href="curseofthejungle.html">Curse of The Jungle</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contacts-->
+            <div class="d-flex m-auto" id="contacts">
+                <!-- LinkedIn-->
+                <a href="https://www.linkedin.com/in/krystian-karczewski-59b21a244/" target="_blank">
+                    <div class="contact" id="linkedin">
+                        <img class="svgIcon" src="Icons/linkedin-circle.svg">
+                        <p class="contactText">
+                            LinkenIn
+                        </p>
+                    </div>
+                </a>
+                <!-- Discord-->
+                <a href="http://discordapp.com/users/307485666814459904" target="_blank">
+                    <div class="contact" id="discord">
+                        <img class="svgIcon" src="Icons/discord-circle.svg">
+                        <p class="contactText">
+                            Discord
+                        </p>
+                    </div>
+                </a>
+                <!-- GitHub-->
+                <a href="https://github.com/Atis5" target="_blank">
+                    <div class="contact" id="github">
+                        <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
+                        <p class="contactText">
+                            GitHub
+                        </p>
+                    </div>
+                </a>
+                <!-- Steam-->
+                <a href="https://steamcommunity.com/id/AtisAtisAtis/" target="_blank">
+                    <div class="contact" id="steam">
+                        <img class="svgIcon" src="Icons/steam.svg">
+                        <p class="contactText">
+                            Steam
+                        </p>
+                    </div>
+                </a>
+                <!-- Itch-->
+                <a href="https://atiss.itch.io/" target="_blank">
+                    <div class="contact" id="steam">
+                        <img class="svgIcon" src="Icons/itch-io.svg">
+                        <p class="contactText">
+                            Itch.io
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header>
+            <h1>Not My Problem</h1>
+            <p> 11.2025 </p>
+            <div id="projectNav">
+                <a href="https://atiss.itch.io/not-my-problem" target="_blank">
+                    <div class="projectButton">
+                        <img class="svgIcon" src="Icons/itch-io.svg">
+                        <p class="buttonSubtitle">itch.io</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Atis5/NotMyProblem" target="_blank">
+                    <div class="projectButton">
+                        <img class="svgIcon" src="Icons/Octicons-mark-github.svg">
+                        <p class="buttonSubtitle">GitHub</p>    
+                    </div>
+                </a>
+            </div>
+        </header>
+
+        <!-- About The Project-->
+        <section class="projectSection">
+            <h2>About the project</h2>
+            <p> "Not My Problem" is a small, 5-minute game about the consequences of ignorance. I made it with my friend Ryan to practice protyping and for me to learn basics of Godot. The theme we were given was "Nothing", and later we were given theme "Wath's Up" and had to connect these two together. This is what we came up with. </p>
+            <p> The code for this game is rather simple and not scalable, as this was my first experience with this game engine. If you want to see more impressive code, check out projects like "Borderline".</p>
+            <video class="projectMedia img-fluid" src="Images/NotMyProblem/NotMyProblemGameplay.mp4" controls></video>
+        </section>
+
+        <!-- Contributions -->
+        <section class="projectSection">
+            <h2> My Contributions </h2>
+
+            <!-- Quest System-->
+            <div class="contribution"> 
+                <h3> Object Interaction & Objectives </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/NotMyProblem/ObjectInteraction.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        Interaction prompt, updated objectives, allows to advance to next level after objectives are completed.
+                        <div class="mt-xs-2 mt-lg-3">
+                            <a href="https://github.com/Atis5/NotMyProblem/blob/main/NothingPrototype/Scripts/player.gd" target="_blank">
+                                <button class="buttonBig"> Interaction Script </button>
+                            </a>
+                            <a href="https://github.com/Atis5/NotMyProblem/blob/main/NothingPrototype/Scripts/objectives.gd" target="_blank">
+                                <button class="buttonBig"> Objectives Script</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>             
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>     
+</body>
+
+
+</html>
