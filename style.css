@@ -13,7 +13,7 @@ h1
 {
     font-size: 60px;
     font-weight: 600;
-    color: #00b4d8;
+    color: #0077b6;
 }
 /* Page title*/
 h2
@@ -87,7 +87,7 @@ a
 {
     font-weight: 600;
     letter-spacing: 2px;
-    color: #0077b6 !important;
+    color: #00b4d8 !important;
 }
 
 .nav-item
@@ -156,8 +156,7 @@ a
 .subtitle
 {
     font-size: 25px;
-    opacity: 0.8;
-
+    opacity: 0.6;
 }
 
 .projects section
