@@ -151,10 +151,13 @@
             <video class="projectMedia img-fluid" src="Images/MoneyDoors/MoneyDoors.mp4" controls></video>
         </section>
         
+        <!-- Class Diagram -->
         <section class="projectSection">
             <h2> Class Diagram</h2>
             <p>This is a class diagram I've made to visualise how everything is tied together. The entirety of the diagram (except for individual puzzles) was implemented into the game by me. The system expands more with addition of bargaining system and multiplayer synchronization, but for simplicity, I decided to visualise only the main gameplay loop.</p>
-            <img class="img-fluid" src="Images/MoneyDoors/MoneyDoorsDiagram.png"></img>
+            <a href="Images/MoneyDoors/MoneyDoorsDiagram.png" target="_blank">
+                <img class="img-fluid" src="Images/MoneyDoors/MoneyDoorsDiagram.png"></img>
+            </a>
         </section>
         
         <!-- Contributions -->
@@ -182,32 +185,40 @@
                 <h3> Puzzle Management </h3>
                 <div class="row align-items-center">
                     <div class="col-xs-12 col-lg-6">
-                        <video class="img-fluid projectMedia" src="Images/WASH/Radar.mp4" controls></video>
+                        <video class="img-fluid projectMedia" src="Images/MoneyDoors/PuzzleManagerExample.mp4" controls></video>
                     </div>
                     <div class="col-xs-12 col-lg-6 order-lg-first">
-                        Minimap that shows pickable objects and the distance to them.
-                        <div class="mt-xs-2 mt-lg-3">
-                            <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/RadarTracking.cs" target="_blank">
-                                <button class="buttonBig"> See Script </button>
-                            </a>
-                        </div>
+                        One of my proudest works is a Puzzle Manager. The manager will randomize and display all yet-unplayed puzzles in the door choice scene and show their names alongside their icons together with a debug tool that allows developers to play any puzzle. No code is required to add or remove puzzles from the list.
+                        <br><br> 
+                        Making new puzzles was quick and easy for other developers. All they needed to do is make a new scene and script inheriting from original puzzle, determine what happens on puzzle_start(), and adjust it for every difficulty.
                     </div>
                 </div>
             </div>
-            <!-- Object Pickup -->
+            <!-- Player Data -->
             <div class="contribution">                
-                <h3> Object Pickup </h3>
+                <h3> Player Data </h3>
                 <div class="row align-items-center">
                     <div class="col-xs-12 col-lg-6">
-                        <video class="img-fluid projectMedia" src="Images/WASH/Pickup.mp4" controls></video>
+                        <video class="img-fluid projectMedia" src="Images/MoneyDoors/PuzzleDataExample.mp4" controls></video>
                     </div>
                     <div class="col-xs-12 col-lg-6">
-                        Slowly moves object towards the submarine, then picks them up.
-                        <div class="mt-xs-2 mt-lg-3">
-                            <a href="https://github.com/Atis5/W.A.S.H./blob/main/Submarine%20Game/Assets/Scripts/PickUpItems.cs" target="_blank">
-                                <button class="buttonBig"> See Script </button>
-                            </a>
-                        </div>
+                        I created a system that stored player's gameplay by tracking how well they did in each puzzle. Every time a player plays through a puzzle, the following data is stored: name of the puzzle, its difficulty, time to complete, and whether it was completed. When visiting statistics, the summary of all puzzles can be seen including each individual puzzle previously played.
+                        <br><br>
+                        This has not only allowed us to test the game more efficiently without needing to look at their gameplay all the time, but also gave the players' opportunity to replay the game and track their statistics.
+                    </div>
+                </div>
+            </div>
+            <!-- Multiplayer Synchronization -->
+            <div class="contribution"> 
+                <h3> Multiplayer Synchronization </h3>
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <video class="img-fluid projectMedia" src="Images/MoneyDoors/PuzzleManagerExample.mp4" controls></video>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 order-lg-first">
+                        One of my proudest works is a Puzzle Manager. The manager will randomize and display all yet-unplayed puzzles in the door choice scene and show their names alongside their icons together with a debug tool that allows developers to play any puzzle. No code is required to add or remove puzzles from the list.
+                        <br><br> 
+                        Making new puzzles was quick and easy for other developers. All they needed to do is make a new scene and script inheriting from original puzzle, determine what happens on puzzle_start(), and adjust it for every difficulty.
                     </div>
                 </div>
             </div>
